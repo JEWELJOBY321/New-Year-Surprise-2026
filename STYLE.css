@@ -1,0 +1,79 @@
+body {
+    background-color: #f8f8f8;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+    max-width: 400px;
+    width: 90%;
+}
+
+.cat-img {
+    width: 180px;
+    margin-bottom: 20px;
+}
+
+.step {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.hidden {
+    display: none;
+}
+
+button {
+    background-color: white;
+    border: 2px solid #444;
+    padding: 8px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 10px;
+    transition: 0.2s;
+}
+
+button:hover {
+    background-color: #eee;
+}
+
+/* Polaroid Photo Styling */
+.polaroid {
+    background: white;
+    padding: 15px 15px 30px 15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    transform: rotate(-3deg);
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.main-photo {
+    width: 250px;
+    height: auto;
+    display: block;
+}
+
+.caption {
+    margin-top: 15px;
+    font-size: 20px;
+    color: #333;
+}
+
+.sticker-cat {
+    width: 80px;
+    position: absolute;
+    margin-left: -40px;
+    margin-top: -30px;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}

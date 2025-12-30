@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Surprise For You</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div id="step-1" class="step">
+            <img id="main-cat" src="cat-asking.png" alt="Asking" class="cat-img">
+            <p id="main-text">Hey! I made something for you.<br>Will you see it?</p>
+            <div class="buttons">
+                <button onclick="nextStep(2)">YES</button>
+                <button id="no-btn" onclick="handleNo()">NO</button>
+            </div>
+        </div>
+
+        <div id="step-2" class="step hidden">
+            <img src="cat-happy.png" alt="Happy" class="cat-img">
+            <p>Hehe!<br>Click below for the Surprise!!</p>
+            <button onclick="nextStep(3)">next</button>
+        </div>
+
+        <div id="step-3" class="step hidden">
+            <h2 id="final-wish" class="hidden">Happy New Year (2026) my kuchupuchu!!</h2><br>
+            <img id="camera-cat" src="cat-camera.png" alt="Camera" class="cat-img">
+            <p id="smile-text">SMILEEEEE........</p>
+            
+            <div id="photo-reveal" class="hidden">
+                <div class="polaroid">
+                    <img src="your-photo.jpg" alt="Our Photo" class="main-photo">
+                    <p class="caption">I Love You My Sister ❤️🥰💖😘</p>
+                </div>
+                <img src="cat-sunglasses.png" alt="Cool Cat" class="sticker-cat">
+            </div>
+
+            <button id="camera-btn" onclick="revealPhoto()">Click here to reveal photo!!</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
